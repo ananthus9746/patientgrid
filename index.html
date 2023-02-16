@@ -1,0 +1,378 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--------------------------------------script for icon clonse and menu-------------------------------------->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!---------------------------------------------------fonts--------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- --------------------------------------------tailwind and css-------------------------------------------->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav_bg_color headsticky   p-5  shadow md:flex md:items-center md:justify-around 	">
+            <!-- logo and handburger icon -->
+            <div class="flex justify-between">
+                <div>
+                    <span class="text-2x1 cursor-pointer ">
+                        <img src="/public/images/logo.svg" alt="">
+                    </span>
+                </div>
+                <span class="text-3xl cursor-pointer md:hidden block mx-2">
+                    <!-- menu and close button changes via js changing the name property to close-outline -->
+                    <ion-icon class="text-3xl" name="menu-outline" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+            <!-- nav links and button,login for tab,phone -->
+            <div>
+                <ul class="md:flex md:items-center z=[-1] md:z-auto md:static absolute nav_bg_color w-full
+                 left-0 md:w-auto md:py-0 py-4 
+                 md:pl-0 pl-2 md:opacity-100 opacity-0  top-[-400px] transition-all ease-in duration-500">
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="">Product</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="">Plans</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0 ">
+                        <div class="flex gap-x-2 items-center ">
+                            <a href="">More</a>
+                            <img class="" src="/public/images/Vector (4).png" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="login-hidde md:hidden flex flex-col	mx-4">
+                            <a href="">Login</a>
+                            <a class="request-demo ml-0 p-2 mt-5" href="">Request a demo</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <!-- button and login for desktop -->
+                <div class="sm:hidden md:block logomhidden_in_tabMobile_view">
+                    <a href="">Login</a>
+                    <button class="request-demo mx-5">Request a demo</button>
+                </div>
+        </nav>
+    </header>
+
+
+
+
+
+    <section class="main_wrapper">
+
+        <div class="main_heading_wrapper">
+            <div class="flex justify-center	flex-col items-center	text-center		">
+                <span class="txt_medical"> Medical Software To Attract And</span><span class="txt_retain_patient">
+                    Retain Patients</span>
+                </p>
+                <p class="txt_patientgrid"> Patientgrid’s communication platform helps improve patient experience while
+                    staff hours.</p>
+                <div class="flex font-medium gap-x-4	justify-center mt-0 md:mt-5">Start For Free<img
+                        src="/public/images/start.svg" alt=""> </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="gradient_container">
+            <div class="main_image_and_gradient child">
+                <div class="imagediv">
+                    <img class="image" src="/public/images/Group 151.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="reviews_wrapper ">
+            <div class="reviews_cols">
+
+
+
+                <div class="col2">
+                    <div class="insideCol">
+                        <div class="doc_and_star">
+                            <div class="stars_flex">
+                                <img src="/public/images/Star 1.svg" alt="">
+                                <img src="/public/images/Star 1.svg" alt="">
+                                <img src="/public/images/Star 1.svg" alt="">
+                                <img src="/public/images/Star 1.svg" alt="">
+                                <img src="/public/images/Star 1.svg" alt="">
+                            </div>
+                            <div class="doc_details">
+                                <img src="/public/images/Ellipse 5.png" alt="">
+                                <div class="doc_name">
+                                    <p class="dr_name">Dr.james L.</p>
+                                    <p class="doc_position">Psychologist Canada</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grayed_rectangle"></div>
+
+                    </div>
+
+                    <div class="but-shadow"></div>
+                </div>
+
+                <div class="text_col">
+                    <p class="text_col_head">Bring new business in by getting more online reviews.</p>
+                    <p class="text_col_para">94% Use review to choose new doctor.</p>
+                </div>
+
+
+                <div class="text_col">
+                    <p class="text_col_head">Save time with collaborative tools and automations.</p>
+                    <p class="text_col_para">15+ Staff hours saved per week.</p>
+                </div>
+
+
+
+
+                <div class="col2 ">
+
+
+                    <div class="insideCol">
+                        <div class="all_comp_cover">
+                            <div class="line_and_circle_cover">
+                                <img src="/public/images/gear/Ellipse 6.svg" alt="">
+                                <div class="line_cover">
+                                    <div class="line_main">
+                                        <div class="line_sub"></div>
+                                    </div>
+                                    <div class="line_big"></div>
+                                </div>
+                            </div>
+
+                            <div class="graph_cover">
+                                <img class="img_graph" src="/public/images/Screenshot__10_-removebg-preview (1).png"
+                                    alt="">
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="line_dark_gray"></div>
+
+
+                    </div>
+
+
+                    <img class="img_gear" src="/public/images/gear/arcticons_automation.svg" alt="">
+
+
+                    <div class="but-shadow  col4_right_shadow"></div>
+                </div>
+
+
+
+
+
+                <div class="col2">
+                    <div class="insideCol">
+                        <div class="chats_div">
+                            <img class="img_chat_1 img_chat" src="/public/images/Group 16.svg" alt="">
+                            <img class="img_chat img_chat" src="/public/images/Group 16.svg" alt="">
+                        </div>
+                    </div>
+
+                    <img class="img_men" src="/public/images/Ellipse 7.png" alt="">
+                    <img class="img_wmn" src="/public/images/Ellipse 8.png" alt="">
+
+                    <div class="but-shadow"></div>
+                </div>
+
+
+                <div class="text_col">
+                    <p class="text_col_head">Improve patient experience engaging the way they want.</p>
+                    <p class="text_col_para">90% People prefer texts to phone calls.</p>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class="seamless_colabration_wrapper">
+
+
+            <div class="text_seamless_container">
+                <p class="text_seamless">Seamless collaboration for healthcare teams</p>
+                <p class="text_withShared">With shared inboxes, any team member can resolve the team’s pending tasks.
+                    Individual staff member
+                    don’t get overwhelmed and patients are always take care of.</p>
+            </div>
+
+            <div class="dash2_container">
+                <img class="das3_img" src="/public/images/dash2.png" alt="">
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="free_trial_wrapper">
+            <img class="top_corner" src="/public/images/Vector.png" alt="" srcset="">
+
+            <div class="all_cover_img_and_text_btm">
+                <div class="img_left_wmn">
+                    <img src="/public/images/Rectangle 57.png" alt="">
+                </div>
+
+                <div class="text_work_div">
+                    <p class="text_work">
+                        We work on a month-to-month basis, try for free with no commitments
+                    </p>
+
+                    <p class="text_lorem">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                    <button class="free__trail_btn"> 14 Free Trail</button>
+                </div>
+            </div>
+
+
+
+            <img class="corner_img" src="/public/images/Vector (1).png" alt="">
+        </div>
+
+
+
+
+        <footer>
+            <div class="footer_wrapper">
+
+                <div class="footer_all_wrapper">
+                    <div class="footer_container_flex">
+
+                        <div class="footer_col">
+                            <img src="/public/images/Frame 316.svg" alt="">
+                            <p class="ft_lorem_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor.</p>
+                            <div class="flex gap-x-5 mt-2	">
+                                <img src="/public/images/Rectangle 31.png" alt="">
+                                <img src="/public/images/Rectangle 32.png" alt="">
+                                <img src="/public/images/Rectangle 33.png" alt="">
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="footer_col">
+                            <div class="flex  items-center	 gap-x-5">
+                                <img src="/public/images/Rectangle 238.png" alt="">
+                                <p>+91-8853923455</p>
+                            </div>
+
+                            <div class="flex  items-center  gap-x-5">
+                                <img src="/public/images/Rectangle 239.png" alt="">
+                                <p>+91-4567895478</p>
+                            </div>
+
+                            <div class="flex  items-center  gap-x-5">
+                                <img src="/public/images/Rectangle 240.png" alt="">
+                                <p>patientgrid@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="footer_col">
+                            <div class="email_and_sub_cover">
+                                <p>Subscribe Newsletter</p>
+                                <div class="emil_div">
+
+                                    <div class="flex  items-center">
+                                        <input class="sub_input pl-3" type="text" name="" id="" placeholder="Email">
+                                        <div class="sub_round_btn"><img src="/public/images/Vector (2).png" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_more">
+                        <a href="">Products</a>
+                        <a href="">Plans</a>
+                        <a href="">More</a>
+                    </div>
+
+                    <div class="copyright">
+                        <p>Copyright 2023.All Rights Reserved.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!---------function for displaying menu and icon actions closeIcon and menuIcon----------------------->
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul')
+            e.name === "menu-outline" ? (e.name = "close-outline", list.classList.
+                add('top-[70px]'), list.classList.add('opacity-100')
+            ) : (e.name = 'menu-outline', list.classList.remove('top-[70px]'), list.classList.remove('opacity-100'))
+        }
+    </script>
+    <!----------------------------------------------------------------------------------->
+</body>
+
+</html>
