@@ -30,10 +30,9 @@ body {
 .request-demo {
   color: white;
   background-color: rgb(46, 83, 231);
-  height: 50px;
+  padding: 15px;
+  text-align: center;
   width: 196px;
-  left: 1104px;
-  top: 21px;
   border-radius: 30px;
 }
 
